@@ -14,11 +14,11 @@
       ]
     ]
   },
-  "main": "dist/bundle.js",
+  "main": "index.js",
   "scripts": {
-    "js:watch": "simplifyify \"src/index.js\" -o \"dist/bundle.js\" -w",
-    "js:build": "simplifyify \"src/index.js\" -o \"dist/bundle.js\" -m",
-    "browsersync": "browser-sync start --server \"dist\" --files \"dist\" --no-ghost-mode --reload-delay 300",
+    "js:watch": "simplifyify \"./app.js\" -o \"./bundle.js\" -w",
+    "js:build": "simplifyify \"./app.js\" -o \"./bundle.js\" -m",
+    "browsersync": "browser-sync start --server \"./\" --files \"./\" --no-ghost-mode --reload-delay 300",
     "dev": "npm-run-all --parallel js:watch browsersync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

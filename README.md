@@ -12,7 +12,7 @@ Starts server at `http://localhost:3000`
 
 Verifies changes on `*.js` to build `dist/bundle.js`
 
-### `npm run js:watch`
+### `npm run js:build`
 
 Bundle & minify to `dist/bundle.min.js`
 

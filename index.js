@@ -2,8 +2,8 @@ var React = require('react');
 
 var App = React.createClass({
     render: function() {
-        return <div>Exemplo</div>
+        return <div>Lorem Ipsum</div>
     }
 })
 
-module.exports = App;
+module.exports = App

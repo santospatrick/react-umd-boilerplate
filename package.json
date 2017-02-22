@@ -16,10 +16,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "js:watch": "simplifyify \"./app.js\" -o \"./bundle.js\" -w",
-    "js:build": "simplifyify \"./app.js\" -o \"./bundle.js\" -m",
-    "browsersync": "browser-sync start --server \"./\" --files \"./\" --no-ghost-mode --reload-delay 300",
-    "dev": "npm-run-all --parallel js:watch browsersync",
+    "js:watch": "simplifyify \"./app.js\" -o \"./dist/bundle.js\" -w",
+    "js:build": "simplifyify \"./app.js\" -o \"./dist/bundle.min.js\" -m",
+    "browsersync": "browser-sync start --server \"./dist\" --files \"./dist\" --no-ghost-mode --reload-delay 300",
+    "start": "npm-run-all --parallel js:watch browsersync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

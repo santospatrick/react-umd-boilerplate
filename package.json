@@ -1,0 +1,40 @@
+{
+  "name": "b3a53188-component",
+  "version": "1.0.0",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "main": "dist/bundle.js",
+  "scripts": {
+    "js": "simplifyify src/index.js -o dist/bundle.js -w -s b3a53188-component",
+    "browsersync": "browser-sync start --server 'dist' --files 'dist' --no-ghost-mode",
+    "dev": "npm-run-all --parallel js browsersync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.8",
+    "browserify": "^14.1.0",
+    "npm-run-all": "^4.0.1",
+    "simplifyify": "^3.2.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

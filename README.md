@@ -6,7 +6,7 @@
 
 ### `npm run browsersync`
 
-Inicia servidor em `http://localhost:3000`
+Starts server at `http://localhost:3000`
 
 ### `npm run js:watch`
 

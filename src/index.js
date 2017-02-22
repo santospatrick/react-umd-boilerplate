@@ -1,3 +1,8 @@
-function any (n1, n2) {
-    console.log(n1, n2);
-}
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app'
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+)

@@ -1,5 +1,5 @@
 {
-  "name": "b3a53188-component",
+  "name": "react-umd-boilerplate",
   "version": "1.0.0",
   "browserify": {
     "transform": [
@@ -16,9 +16,10 @@
   },
   "main": "dist/bundle.js",
   "scripts": {
-    "js": "simplifyify src/index.js -o dist/bundle.js -w -s b3a53188-component",
-    "browsersync": "browser-sync start --server 'dist' --files 'dist' --no-ghost-mode",
-    "dev": "npm-run-all --parallel js browsersync",
+    "js:watch": "simplifyify \"src/index.js\" -o \"dist/bundle.js\" -w",
+    "js:build": "simplifyify \"src/index.js\" -o \"dist/bundle.js\" -m",
+    "browsersync": "browser-sync start --server \"dist\" --files \"dist\" --no-ghost-mode --reload-delay 300",
+    "dev": "npm-run-all --parallel js:watch browsersync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,5 +1,7 @@
 # React UMD Boilerplate
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 > React component boilerplate to easily reuse with 'npm install'
 
 ## Scripts

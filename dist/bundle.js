@@ -22,17 +22,16 @@ _reactDom2.default.render(_react2.default.createElement(_index2.default, null), 
 },{"./index.js":2,"react":179,"react-dom":28}],2:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var React = require('react');
 
-var App = React.createClass({
-    displayName: 'App',
+var App = function App() {
+  return React.createElement('div', null, 'Lorem Ipsum');
+};
 
-    render: function render() {
-        return React.createElement('div', null, 'Lorem Ipsum');
-    }
-});
-
-module.exports = App;
+exports.default = App;
 
 },{"react":179}],3:[function(require,module,exports){
 (function (process){

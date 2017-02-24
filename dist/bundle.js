@@ -25,10 +25,17 @@ _reactDom2.default.render(_react2.default.createElement(_index2.default, null), 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var React = require('react');
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var App = function App() {
-  return React.createElement('div', null, 'Lorem Ipsum');
+  return _react2.default.createElement('div', null, 'Lorem Ipsum');
 };
 
 exports.default = App;

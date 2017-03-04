@@ -17,7 +17,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-_reactDom2.default.render(_react2.default.createElement(_index2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_index2.default, { message: 'Lorem Ipsum' }), document.getElementById('app'));
 
 },{"./index.js":2,"react":179,"react-dom":28}],2:[function(require,module,exports){
 'use strict';
@@ -34,8 +34,8 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-var App = function App() {
-  return _react2.default.createElement('div', null, 'Lorem Ipsum');
+var App = function App(props) {
+  return _react2.default.createElement('div', null, props.message);
 };
 
 exports.default = App;

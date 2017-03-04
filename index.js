@@ -1,7 +1,7 @@
 import React from 'react'
 
-const App = () => (
-  <div>Lorem Ipsum</div>
+const App = (props) => (
+  <div>{props.message}</div>
 )
 
 export default App
